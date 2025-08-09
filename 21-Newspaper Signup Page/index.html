@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe to Our Newsletter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-section">
+      <div class="head">
+      <h1>Subscribe to Our Newsletter</h1>
+      <p class="subtitle">Stay Ahead with <span class="highlight">Tech Insights</span> & Updates</p>
+      </div>
+      <form id="signupForm">
+        <div>
+          <input type="text" id="name" placeholder="Full Name" required />
+          <div id="nameError" class="error-message"></div>
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Email Address" required />
+          <div id="emailError" class="error-message"></div>
+        </div>
+        <button type="submit" id="subscribeBtn">Subscribe</button>
+        <div class="privacy-note">We respect your privacy. No spam ever.</div>
+        <div id="successMessage" class="success-message"></div>
+      </form>
+    </div>
+    <div class="image-section"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
