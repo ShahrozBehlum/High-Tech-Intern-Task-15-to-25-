@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #ada9a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inp-name,.inp-email,.inp-msg {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+}
