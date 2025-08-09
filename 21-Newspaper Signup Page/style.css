@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #35475a;
+    color: #333;
+}
+
+.container {
+    position: relative;
+    top: 70px;
+    max-width: 1040px;
+    min-height: 50vh;
+    margin: 0 auto;
+    background: #dcdada;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.form-section,
+.image-section {
+    flex: 1 1 300px;
+    padding: 2rem;
+}
+
+.image-section {
+    background: url('https://media.istockphoto.com/id/1346029753/photo/subscribe-text-on-speech-bubble-with-envelopes.jpg?s=1024x1024&w=is&k=20&c=k6IlWLffnNl1XJIEuFMl8AWsUOCGV8XYdcX-9p5-8rE=') no-repeat center/cover;
+    min-height: 300px;
+}
+
+.head {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #2563EB;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #1F2937;
+    animation: slideFadeIn 1.2s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+p.subtitle {
+    margin-bottom: 2rem;
+    color: #1F2937;
+    animation: slideFadeIn 1.2s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+
+}
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+    width: 100%;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(29, 78, 216, 0.3);
+    background: linear-gradient(135deg, #1E40AF, #1D4ED8);
+}
+
+.privacy-note {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.85rem;
+}
+
+.success-message {
+    color: green;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1.3rem;
+    }
+
+    .container {
+        flex-direction: column;
+        top: 0;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p.subtitle {
+        font-size: .8rem;
+    }
+
+    .head {
+        margin-top: 10px;
+    }
+}
