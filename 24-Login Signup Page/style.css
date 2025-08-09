@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+.login-container{
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 80px 0 rgb(9, 242, 71);
+}
+h1{
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 30px;
+}
+
+.login-container .name, .password, .checkbox {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.login-container .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.login-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: rgb(9, 242, 71); 
+}
+
+.login{
+   padding:13px;
+   border-radius: 50px;
+   width: 100%;
+   background-color: rgb(28, 241, 60);
+   color: #fff;
+}
+
+.msg {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up1{
+    position: relative;
+    left: 200px;
+    top: 6px;
+    border: none;
+    background-color: #000;
+    color: rgb(19, 220, 22);
+}
+
+.sign-container{
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 80px 0 rgb(9, 242, 71);
+}
+h1{
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 20px;
+}
+
+.sign-container .name, .password, .confirm-password, .checkbox {
+    margin-bottom: 15px;
+}
+
+.sign-container input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.sign-container .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.sign-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: rgb(9, 242, 71); 
+}
+
+.signup2{
+   padding:13px;
+   border-radius: 50px;
+   width: 100%;
+   background-color: rgb(28, 241, 60);
+   color: #fff;
+}
+
+.msg {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-in{
+    position: relative;
+    left: 200px;
+    top: 6px;
+    border: none;
+    background-color: #000;
+    color: rgb(19, 220, 22);
+}
+
+.hide1 {
+    display: none;
+}
+
+.hide2 {
+    display: none;
+}
+
+@media (max-width: 480px) {
+.login-container, .sign-container {
+    max-width: 300px;
+}
+  
+  h1 {
+    font-size: 1.8rem;
+    padding: 10px 0;
+  }
+
+  .login,
+  .signup2 {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .sign-up1,
+  .sign-in {
+    font-size: 0.9rem;
+    position: relative;
+    left: 100px;
+  }
+
+  .checkbox label {
+    font-size: 0.85rem;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
