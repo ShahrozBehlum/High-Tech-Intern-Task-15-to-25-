@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Ga+Maamli&family=Lobster&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+     font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    height: 60px;
+}
+.logo h2 {
+    font-family: "Lobster", serif;
+    color: red;
+}
+.menu {
+    display: flex;
+}
+.menu p a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 60px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.hero-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(45deg, rgb(0, 0, 0), darkred);
+}
+.hero-sec .heading h1 {
+    font-size: 2.9rem;
+    font-family: "Rubik Mono One", serif;
+    color: rgb(222, 11, 11);
+    font-style: normal;
+}
+.hero-sec .heading p {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.hero-sec .heading .btn1 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 60px;
+    padding: 12px;
+    font-weight: 600;
+    position: relative;
+    top: 80px;
+    left: 130px;
+    background: linear-gradient(45deg, red, darkred);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.hero-sec .heading .btn2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 60px;
+    font-weight: 600;
+    padding: 12px;
+    position: relative;
+    top: 80px;
+    left: 150px;
+    background: linear-gradient(45deg, red, darkred);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.hero-sec .heading .btn1:hover {
+    background: linear-gradient(45deg, darkred, red);
+    color: #ffcc00;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.hero-sec .heading .btn2:hover {
+    background: linear-gradient(45deg, darkred, red);
+    color: #ffcc00;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.hero-sec .img img {
+    width: 720px;
+}
+.about h1 {
+    font-size: 3rem;
+    margin-left: 70px;
+    margin-top: 70px;
+    color: #fff;
+}
+.about hr {
+    background-color: red;
+    width: 90px;
+    position: relative;
+    left: 69px;
+    top: 1px;
+    border: none;
+    height: 3px;
+}
+.abt-intrn {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: red;
+    color: #fff;
+    position: relative;
+    top: 80px;
+    left: 230px;
+    padding: 100px;
+}
+.abt-intrn p {
+    font-size: 1.5rem;
+}
+.benefit h1 {
+    font-size: 3rem;
+    position: relative;
+    left: 70px;
+    top: 170px;
+    color: #fff;
+}
+.benefit hr {
+    width: 90px;
+    position: relative;
+    left: 69px;
+    top: 174px;
+    border: none;
+    height: 3px;
+    background-color: red;
+}
+.benefits-intrn {
+    background-color: red;
+    width: 70vw;
+    height: 70vh;
+    color: #fff;
+    position: relative;
+    top: 260px;
+    left: 230px;
+    padding: 100px;
+}
+.benefits-intrn p {
+    font-size: 1.5rem;
+    margin-top: 70px;
+}
+.detail {
+    height: 80px;
+    background-color: rgb(67, 23, 23);;
+    color: #fff;
+    position: relative;
+    top: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.detail p {
+    font-size: 1.3rem;
+}
