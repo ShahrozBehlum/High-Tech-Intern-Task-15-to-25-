@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgba(79, 79, 156, 8);
+    color: #fff;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    height: 60px;
+    color: #fff;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7rem;
+    margin-left: 30px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main-container h1 {
+    text-align: center;
+    font-size: 3.2rem;
+}
+.main-container p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 60px;
+}
+.main-container .btn1 {
+    display: block;
+    margin: 0 auto;
+    padding: 25px 60px;
+    font-size: 1.5rem;
+    background-color: #4677ff;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.main-container .btn1:hover {
+    background-color: #387bc3;
+    color: white;
+}
+.main-container img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+.about {
+    position: relative;
+    top: 140px;
+}
+.contact {
+    background: #f0ecec;
+    color: #000;
+    border: none;
+    box-shadow: 10px black;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+}
+.contact h2 {
+    text-align: center;
+    font-size: 2.3rem;
+}
+.contact label {
+    display: block;
+    font-size: 1.4rem;
+}
+.contact input {
+    width: 100%;
+    padding: 8px;
+    height: 40px;
+}
+.contact textarea {
+    width: 100%;
+    padding: 7px;
+    height: 150px;
+}
+.contact,.name,.email,.msg {
+    margin-top: 20px;
+}
+.contact .btn2 {
+    display: block;
+    margin: 0 auto;
+    padding: 17px 0px;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.contact .btn2:hover {
+    background-color: #387bc3;
+
+    color: white;
+}
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    .contact {
+        width: 320px;
+    }
+}
