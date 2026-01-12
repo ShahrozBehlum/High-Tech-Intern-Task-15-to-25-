@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #242f42, #0a3c75);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container .header {
+    text-align: center;
+}
+
+.container .header h1 {
+    font-size: 2.6rem;
+    color: #68cf81;
+}
+
+.container .header p {
+    color: #b2b6b4;
+    font-size: 1.1rem;
+}
+
+.container .tabs {
+    margin:50px 0 0 0px ;
+}
+
+.container .tabs button {
+    margin-left: 13px;
+    padding: 17px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.container .tabs button:hover {
+    background: #6d6868;
+    color: #fff;
+}
+.container .tabs button.active1, 
+.container .tabs button.active2, 
+.container .tabs button.active3 {
+    background-color: blue;
+    color: white;
+}
+
+.container .tabs button.active1:hover,
+.container .tabs button.active2:hover,
+.container .tabs button.active3:hover {
+    background-color: blue;
+    color: white;
+    cursor: default; 
+}
+
+.container .content-area .web-content, .app-content, .dm-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    line-height: 2.4rem;
+}
+
+.content-area .web-content h1, .app-content h1, .dm-content h1 {
+    color: #b2b6b4;
+    margin-bottom: 30px;
+}
+
+.container .content-area .web-content, .app-content, .dm-content p {
+    font-size: 1.2rem;
+}
+
+.container .content-area .web-content, .app-content, .dm-content, ul {
+    display: flex;
+    list-style: none;
+}
+
+.container .content-area .web-content ul li, 
+.container .content-area .app-content ul li, 
+.container .content-area .dm-content ul li {
+    margin:15px 0 0 20px;
+    font-size: 2.3rem;
+    transition: all ease .8s;
+}
+
+.container .content-area .web-content ul li:hover, 
+.container .content-area .app-content ul li:hover, 
+.container .content-area .dm-content ul li:hover {
+    font-size: 2.5rem;
+    background: blue;
+    border-radius: 50%;
+}
+
+.container .content-area .web-content button, 
+.container .content-area .app-content button, 
+.container .content-area .dm-content button {
+    margin: 30px 0 0 30px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all ease 1s;
+} 
+
+.container .content-area .web-content button:hover, 
+.container .content-area .app-content button:hover, 
+.container .content-area .dm-content button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.container .content-area .web-content button a, 
+.container .content-area.app-content button a, 
+.container .content-area.dm-content button a {
+    text-decoration: none;
+}
+
+.container .content-area .hide1, .hide2, .hide3{
+    display: none;
+}
+
+/* For tablets and below */
+@media (max-width: 768px) {
+  .container .tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .tabs button {
+    margin: 10px 0;
+    width: 80%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .container .content-area .web-content,
+  .container .content-area .app-content,
+  .container .content-area .dm-content {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .container .content-area .web-content ul,
+  .container .content-area .app-content ul,
+  .container .content-area .dm-content ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container .content-area .web-content ul li,
+  .container .content-area .app-content ul li,
+  .container .content-area .dm-content ul li {
+    margin: 10px;
+    font-size: 2rem;
+  }
+
+  .container .content-area .web-content button,
+  .container .content-area .app-content button,
+  .container .content-area .dm-content button {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .container {
+    margin-top: 42px;
+  } 
+
+  .container .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .container .header p {
+    font-size: 0.95rem;
+  }
+
+  .container .tabs button {
+    width: 200px;
+    padding: 15px;
+    font-size: .8rem;
+  }
+
+  .container .content-area .web-content h1,
+  .container .content-area .app-content h1,
+  .container .content-area .dm-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .container .content-area .web-content p,
+  .container .content-area .app-content p,
+  .container .content-area .dm-content p {
+    font-size: .9rem;
+    padding: 0 10px;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+  }
+
+  .container .content-area .web-content button,
+  .container .content-area .app-content button,
+  .container .content-area .dm-content button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
